@@ -9,10 +9,11 @@
 </head>
 <body>
     <h1 class="display-1">Bootstrap4.2</h1>
+    <h1 class="display-5">重置(Rebot)</h1>
     <!-- 顯示標題的樣式多元變化 -->
     <div class="container-wrap">
-        <h1>語意的標題</h1>
-        <p class="h1">不含語意的標題</p>
+        <h3>語意的標題</h3>
+        <p class="h3">不含語意的標題</p>
         <p class="lead">
             Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
         </p>
@@ -65,7 +66,6 @@
     <!-- 文章、論文的章節內容引用 -->
 
     <h2>列表</h2>
-    <p>列表清單預設會加入樣式，如果不要樣式可以用在很多地方，如 Footer</p>
     <ul class="list-unstyled">
         <!-- list-unstyled把裝飾都修掉 -->
       <li>Lorem ipsum dolor sit amet</li>
@@ -84,8 +84,9 @@
       <li>Aenean sit amet erat nunc</li>
       <li>Eget porttitor lorem</li>
     </ul>
+    <!-- 列表清單預設會加入樣式，如果不要樣式可以用在很多地方，如 Footer -->
 
-    <p>行內則是可以用在維持清單語意的地方</p>
+    <p>行內的列表</p>
     <ul class="list-inline">
         <li class="list-inline-item">Lorem ipsum</li>
         <li class="list-inline-item">Phasellus iaculis</li>
@@ -106,11 +107,140 @@
       <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
       <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+      <!-- text-truncate用...取代多餘內容 -->
       <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
     </dl>
 
-    <hr>
-   
+
+    <h1 class="display-5">程式碼(Code)</h1>
+    <h2>行內程式碼</h2>
+    For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+    <h2>多行程式碼</h2>
+    <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+        &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+        </code></pre>
+
+    <h2>變數</h2>
+    <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+    <h2>使用者輸入</h2>
+    To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+    <h2>輸出結果</h2>
+    <samp>This text is meant to be treated as sample output from a computer program.</samp>
+
+    <h1 class="display-5">圖片(Image)</h1>
+    <img src="https://images.unsplash.com/photo-1599713201276-6733c471d85a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" width="400" class="img-fluid" alt="Responsive image">
+    <!-- Bootstrap 中的圖片可利用 .img-fluid 設定為響應式。 max-width：100％; 和 height：auto; 也需一併使用，讓圖片可依父元素屬性進行縮放。 -->
+    <img src="https://images.unsplash.com/photo-1599713201276-6733c471d85a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" width="400" class="img-thumbnail " alt="Responsive image">
+
+    <div class="text-center">
+        <img src="https://images.unsplash.com/photo-1599713201276-6733c471d85a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" width="400"  alt="Responsive image">
+    </div>
+    <h1 class="display-5">圖片區(Figure)</h1>
+    <figure class="figure">
+        <img src="https://images.unsplash.com/photo-1599713201276-6733c471d85a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+    </figure>
+
+    <h1 class="display-5">表格(Table)</h1>
+    <h2>基本表格</h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="table-primary">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+    </table>
+
+      <h2>可滑入表格</h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>響應式表格</h2>
+      <div class="table-responsive">
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
 
 
 
